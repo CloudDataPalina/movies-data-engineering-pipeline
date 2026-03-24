@@ -48,23 +48,24 @@ This project demonstrates **data movement between systems**, a key skill in Data
 ```
 movies-data-engineering-pipeline/
 ├── data/                         ← Source and processed data files
-│  ├── movies.json                ← Raw dataset (input)
-│  └── partial_data.csv           ← Exported dataset from MongoDB
+│   ├── movies.json               ← Raw dataset (input)
+│   └── partial_data.csv          ← Exported dataset from MongoDB
 │
 ├── mongo/
-│  ├── mongo_commands.txt         ← MongoDB import/export commands
-│  └── mongo_queries.js           ← Aggregation and query scripts
+│   ├── mongo_commands.txt        ← MongoDB import/export commands
+│   └── mongo_queries.js          ← Aggregation and query scripts
 │
 ├── cassandra/
-│  ├── schema.cql                 ← Keyspace and table definitions
-│  └── queries.cql                ← Cassandra queries and index creation
+│   ├── schema.cql                ← Keyspace and table definitions
+│   └── queries.cql               ← Cassandra queries and index creation
 │
 ├── screenshots/                  ← Execution proofs (lab validation)
-│  ├── mongo_import.png           ← MongoDB import result
-│  ├── aggregation.png            ← Aggregation query result
-│  ├── export.png                 ← CSV export confirmation
-│  ├── cassandra_copy.png         ← Data load into Cassandra
-│  └── index.png                  ← Index creation proof
+│   ├── mongo_import.png          ← MongoDB import result
+│   ├── aggregation.png           ← Aggregation query result
+│   ├── export.png                ← CSV export confirmation
+│   ├── cassandra_keyspace.png    ← Keyspace creation in Cassandra
+│   ├── cassandra_copy.png        ← Data load into Cassandra
+│   └── index.png                 ← Index creation proof
 │
 ├── LICENSE                       ← MIT License
 └── README.md                     ← Project documentation
