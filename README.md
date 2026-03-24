@@ -128,6 +128,27 @@ movies-data-engineering-pipeline/
          Cassandra
      (index & queries)
 ```
+---
+
+## 📸 Execution Screenshots
+
+### MongoDB Import
+![Mongo Import](screenshots/mongo_import.png)
+
+### Aggregation Query Result
+![Aggregation](screenshots/aggregation.png)
+
+### Data Export
+![Export](screenshots/export.png)
+
+### Cassandra Keyspace Creation
+![Cassandra Keyspace](screenshots/cassandra_keyspace.png)
+
+### Cassandra Data Load
+![Cassandra Copy](screenshots/cassandra_copy.png)
+
+### Index Creation
+![Index](screenshots/index.png)
 
 ---
 
