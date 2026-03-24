@@ -1,0 +1,18 @@
+# MongoDB Import
+mongoimport --host <host> --port 27017 -u root -p <password> \
+--authenticationDatabase admin \
+--db entertainment \
+--collection movies \
+--file movies.json
+
+# Count documents
+db.movies.countDocuments()
+
+# Movies after 1999
+db.movies.countDocuments({ year: { $gt: 1999 } })
+
+# Export to CSV
+mongoexport --db entertainment --collection movies \
+--type=csv \
+--fields _id,title,year,rating,Director \
+--out partial_data.csv
