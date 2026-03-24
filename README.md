@@ -61,11 +61,15 @@ movies-data-engineering-pipeline/
 │
 ├── screenshots/                  ← Execution proofs (lab validation)
 │   ├── mongo_import.png          ← MongoDB import result
-│   ├── aggregation.png           ← Aggregation query result
+│   ├── aggregation.png           ← Aggregation (year with most movies)
+│   ├── mongo_after_1999.png      ← Movies count after 1999
+│   ├── mongo_avg_votes_2007.png  ← Average votes in 2007
 │   ├── export.png                ← CSV export confirmation
 │   ├── cassandra_keyspace.png    ← Keyspace creation in Cassandra
 │   ├── cassandra_copy.png        ← Data load into Cassandra
-│   └── index.png                 ← Index creation proof
+│   ├── index.png                 ← Index creation proof
+│   ├── cassandra_total_rows.png  ← COUNT(*) = 100
+│   └── cassandra_rating_g.png    ← WHERE rating = 'G'
 │
 ├── LICENSE                       ← MIT License
 └── README.md                     ← Project documentation
@@ -133,11 +137,15 @@ movies-data-engineering-pipeline/
 ## 📸 Execution Screenshots
 
 - MongoDB Import → [Open](screenshots/mongo_import.png)  
-- Aggregation Query Result → [Open](screenshots/aggregation.png)  
-- Data Export → [Open](screenshots/export.png)  
+- Aggregation (Year with Most Movies) → [Open](screenshots/aggregation.png)  
+- Data Export (CSV) → [Open](screenshots/export.png)  
+
 - Cassandra Keyspace Creation → [Open](screenshots/cassandra_keyspace.png)  
 - Cassandra Data Load → [Open](screenshots/cassandra_copy.png)  
-- Index Creation → [Open](screenshots/index.png)
+- Index Creation → [Open](screenshots/index.png)  
+
+- Data Validation (Total Rows = 100) → [Open](screenshots/cassandra_total_rows.png)  
+- Data Validation (Rating = 'G' → 32) → [Open](screenshots/cassandra_rating_g.png)
 
 ---
 
